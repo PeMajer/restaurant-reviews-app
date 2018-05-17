@@ -14,10 +14,11 @@ gulp.task('default', ['copy-html','copy-img','copy-js','copy-css','copy-json'], 
             port: 8001
         }
     });
-    gulp.watch('app/css/**/*.css', ['copy-css']);
+    gulp.watch('app/css/*.css', ['copy-css']);
     gulp.watch('app/*.html', ['copy-html']);
     gulp.watch('app/data/*.json', ['copy-json']);
     gulp.watch('app/js/**/*.js', ['copy-js']);
+    gulp.watch('dist/css/*.css', browserSync.reload);              // obe moznosti funguji
     gulp.watch('dist/index.html', browserSync.reload);              // obe moznosti funguji
     gulp.watch('dist/js/**/*.js').on('change', browserSync.reload); // obe moznosti funguji
 
