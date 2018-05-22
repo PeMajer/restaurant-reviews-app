@@ -131,7 +131,6 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
   });
   addMarkersToMap();
 }
-
 /**
  * Create restaurant HTML.
  */
@@ -141,6 +140,13 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  
+  const srcset = `/img/${restaurant.id}-200w.jpg 200w,/img/${restaurant.id}-400w.jpg 400w,/img/${restaurant.id}-600w.jpg 600w,/img/${restaurant.id}-800w.jpg 800w`;  
+  image.setAttribute('srcset',srcset);
+
+  const sizes='(max-width: 599px) 85vw,(max-width: 757px) calc(40vw - 32px), 270px';
+  image.setAttribute('sizes',sizes);
+  
   li.append(image);
 
   const name = document.createElement('h1');
