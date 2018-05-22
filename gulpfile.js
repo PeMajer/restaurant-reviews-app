@@ -9,9 +9,9 @@ const uglify = require('gulp-uglify-es').default;  // minifikuje JS
 gulp.task('default', ['copy-html','copy-img','copy-js','copy-css','copy-json'], function(){
     browserSync.init({
         server: './dist',
-        port: 8000,
+        port: 4000,
         ui: {
-            port: 8001
+            port: 4001
         }
     });
     gulp.watch('app/css/*.css', ['copy-css']);
