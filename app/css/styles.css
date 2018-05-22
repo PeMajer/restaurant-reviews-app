@@ -1,9 +1,8 @@
 @charset "utf-8";
 /* CSS Document   */
 html {
-  font-size: 13px;   /* pridani */
+  font-size: 13px;   
 }
-
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1rem;
@@ -47,42 +46,40 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px 0;    /* upraveno*/
+  padding: 25px 0;   
   text-align: center;
   text-transform: uppercase;
 }
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-       /* smazani */
   background-color: #252831;
   text-align:center;
 }
 nav h1 {
   margin: auto;
-  font-size: 1.2rem;      /* pridani */
-  padding: 1em 0.5em;  /* pridani */
+  font-size: 1.2rem;      
+  padding: 1em 0.5em;  
 }
 nav h1 a {
   color: #fff;
-  /* smazani */
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 16px 0; /*uprava*/
+    padding: 16px 0; 
     list-style: none;
     background-color: #eee;
     margin: 0;
-    width: 100%;  /*uprava*/
-    text-align: center; /* pridano */
+    width: 100%;  
+    text-align: center; 
 }
 
 /* Display list items side by side */
 #breadcrumb li {
     display: inline;
-    font-size: 1.2rem; /*pridani*/
+    font-size: 1.2rem; 
 }
 
 /* Add a slash symbol (/) before/behind each list item */
@@ -105,8 +102,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 65vh;  /* pridani */
-  /*max-height: 400px;*/
+  height: 65vh;  
   width: 100%;
   background-color: #ccc;
 }
@@ -119,7 +115,7 @@ nav h1 a {
 }
 .filter-options h2 {
   color: white;
-  font-size: 1.1rem;  /* pridani */
+  font-size: 1.1rem;  
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
@@ -128,19 +124,16 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 1rem;  /* pridani */
+  font-size: 1rem;  
   height: 35px;
   letter-spacing: 0;
-  margin: 9px; /* uprava */
+  margin: 9px; 
   padding: 0 10px;
-  width: 142px;/* uprava */
+  width: 142px;
 }
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
- /* display: flex;
-  flex-flow: row wrap; 
-  justify-content: center;*/
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
@@ -151,25 +144,22 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 10px auto;   /*uprava */
-  /*min-height: 380px;*/
-  padding: 0 15px 15px; /*uprava */
-  text-align: center; /*uprava */
-  /*max-width: 270px;*/
-  width: 90%;  /*pridani */
+  margin: 10px auto;   
+  padding: 0 15px 15px; 
+  text-align: center; 
+  width: 90%; 
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  /*min-height: 248px;*/
   min-width: 100%;
 }
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 1.2rem;  /* uprava*/
+  font-size: 1.2rem;  
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
@@ -185,7 +175,7 @@ nav h1 a {
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 1rem; /* uprava*/
+  font-size: 1rem; 
   margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
@@ -195,17 +185,10 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  /*position: fixed;
-  top: 0;*/
   width: 100%;
-  /*z-index: 1000;*/
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
- /* height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;*/
   height: 40vh;
   width: 100%;
 }
@@ -215,24 +198,22 @@ nav h1 a {
   width: 100%;
 }
 .inside #footer {
-  /*bottom: 0;
-  position: absolute;*/
   width: 100%;
 }
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 1.7rem;   /* uprava*/
+  font-size: 1.7rem;   
   font-weight: 200;
   letter-spacing: 0;
-  margin: 1.2rem 0;    /* uprava*/
+  margin: 1.2rem 0;    
   text-transform: uppercase;
   line-height: 1.1;
   text-align: center;
 }
 #restaurant-img {
-  width: 100%;  /* uprava*/
-  border-radius: 30px 0; /* pridano*/
+  width: 100%;  
+  border-radius: 30px 0; 
 }
 #restaurant-address {
   font-size: 12pt;
@@ -249,22 +230,22 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 100%;   /* uprava*/
+	width: 100%;   
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 10px 0 30px;
-  width: 85%;  /* uprava*/
-  margin: 0 auto; /* pridani*/
+  width: 85%;  
+  margin: 0 auto; 
   
 }
 #reviews-container {
-  padding: 10px 10px;  /* uprava*/
+  padding: 10px 10px;  
 }
 #reviews-container h2 {
   color: #f58500;
-  font-size: 1.7rem; /* uprava*/
+  font-size: 1.7rem; 
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
@@ -281,10 +262,8 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 10px; 
   overflow: hidden;
-  /*padding: 0 20px 20px 0;  /* upraveno */
   position: relative;
-  /*width: 90%; /* upraveno */
-  border-radius: 30px 0; /* pridano*/
+  border-radius: 30px 0; 
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -296,11 +275,6 @@ nav h1 a {
 #restaurant-hours {
   margin: 0 auto;
 }
-
-
-
-
-
 
 @media only screen and (min-width: 270px) {
   #reviews-list li p:nth-of-type(1) {
@@ -333,7 +307,6 @@ nav h1 a {
  }
 
 @media only screen and (min-width: 324px) {
- /* ====================== Restaurant Filtering ====================== */
   .filter-options {
     height: 50px;
   }
@@ -343,28 +316,27 @@ nav h1 a {
   html {
     font-size: 14px;   
   }
-  /* ====================== Navigation ====================== */
   nav {
     height: 80px;
   }
-  /* ====================== Map ====================== */
+
   #map {
     height: 400px;
   }
-  /* ====================== Restaurant Filtering ====================== */
+
   .filter-options select {
-    width: 200px;  /*uprava */
+    width: 200px;  
   }
-  /* ====================== Restaurant Listing ====================== */
+
   #restaurants-list {
-     display: flex;
-     flex-flow: row wrap; 
-     justify-content: space-evenly;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
   }
   #restaurants-list li {
     margin: 10px 5px;
-    text-align: left; /*uprava */
-    width: 40% ;  /*pridani */
+    text-align: left; 
+    width: 40% ;  
   }
 }
 
@@ -372,31 +344,28 @@ nav h1 a {
   html {
     font-size: 16px;   
   }
-  /* ====================== Navigation ====================== */
   nav h1 a {
     font-size: 14pt;
   }
+
   #breadcrumb {
       padding: 10px 40px 16px;
       font-size: 17px;
       width: calc(50% - 80px);
       text-align: left;
   }
-  
-  /* Display list items side by side */
   #breadcrumb li {
       font-size: 1rem;
   }
-  
-  /* ====================== Restaurant Filtering ====================== */
+
   .filter-options h2 {
-    font-size: 1rem;  /* pridani */
+    font-size: 1rem;  
   }
   .filter-options select {
     font-size: 11pt;
     margin: 10px;
   }
-  /* ====================== Restaurant Listing ====================== */
+  
   #restaurants-list {
     padding: 30px 0 60px;
   }
@@ -420,7 +389,6 @@ nav h1 a {
     font-size: 10pt;
   }
   
-  /* ====================== Restaurant Details ====================== */
   .inside header {
     position: fixed;
     top: 0;
@@ -498,8 +466,7 @@ nav h1 a {
 @media only screen and (min-width: 1200px) {
   html {
     background-color: #fbfbfb;
-  }
-  
+  } 
   body {
     width: 1200px;
     margin: 0 auto;
