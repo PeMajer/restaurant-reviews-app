@@ -5,6 +5,7 @@ const browserSync = require('browser-sync').create();
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');  //spoji vice js do jednoho js
 const uglify = require('gulp-uglify-es').default;  // minifikuje JS
+const responsive = require('gulp-responsive-images');
 
 gulp.task('default', ['copy-html','copy-img','copy-js','copy-css','copy-json'], function(){
     browserSync.init({
@@ -97,5 +98,29 @@ gulp.task('uglify', function () {  // minifikuje JS
         .on('error', createErrorHandler('uglify'))
         .pipe(gulp.dest('dist/js/'))
         .on('error', createErrorHandler('gulp.dest'));
+});
+
+gulp.task('responsive-img', function(){
+    gulp.src('app/img/*')
+        .pipe(responsive({
+            '*.jpg': [{
+                width: 200,
+                suffix: '-200w',
+                quality: 50
+              }, {
+                width: 400,
+                suffix: '-400w',
+                quality: 50
+              }, {
+                width: 600,
+                suffix: '-600w',
+                quality: 50
+              }, {
+                width: 800,
+                suffix: '-800w',
+                quality: 50
+              }]
+        }))
+        .pipe(gulp.dest('dist/img'));
 });
 
