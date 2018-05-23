@@ -14,13 +14,13 @@
 
 <body class="inside">
   <!-- Beginning header -->
-  <header>
+  <header role="banner">
     <!-- Beginning nav -->
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" aria-label="breadcrumb">
+    <ul id="breadcrumb" aria-label="breadcrumb" role="navigation">
       <li><a href="/">Home</a></li>
     </ul>
     <!-- End breadcrumb -->
@@ -30,10 +30,10 @@
   <!-- End header -->
 
   <!-- Beginning main -->
-  <main id="maincontent">
+  <main id="maincontent" role="main"> 
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" aria-label="interactive map"></div>
+      <div id="map" aria-label="interactive map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
@@ -47,14 +47,14 @@
     <!-- end restaurant -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+      <ul id="reviews-list" role="list" aria-label="list of reviews"></ul>
     </section>
     <!-- End reviews -->
   </main>
   <!-- End main -->
 
   <!-- Beginning footer -->
-  <footer id="footer">
+  <footer id="footer" role="contentinfo">
     Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
   <!-- End footer -->
