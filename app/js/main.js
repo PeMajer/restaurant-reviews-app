@@ -164,6 +164,10 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+
+  const moreLabel = `Wiev ${restaurant.name}'s details`;
+  more.setAttribute('aria-label',moreLabel);
+
   li.append(more)
 
   return li
