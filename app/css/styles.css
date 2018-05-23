@@ -473,12 +473,7 @@ nav h1 a {
     margin: 0 auto;
   }
 
-  nav ,
-  #map,
-  .filter-options,
-  #restaurants-list,
-  footer,
-  header  {
+  nav, #map, .filter-options, #restaurants-list, footer, header  {
     width: 1200px;
   }
 
