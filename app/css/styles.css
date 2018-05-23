@@ -51,6 +51,18 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+  z-index: 100;
+  color: #fff;
+  background-color: orange;
+  padding: 10px;
+}
+.skip-link:focus {
+  top: 10px;
+}
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
