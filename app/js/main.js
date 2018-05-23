@@ -146,6 +146,9 @@ createRestaurantHTML = (restaurant) => {
 
   const sizes='(max-width: 599px) 85vw,(max-width: 757px) calc(40vw - 32px), 270px';
   image.setAttribute('sizes',sizes);
+
+  const alt = `${restaurant.name} restaurant, ${restaurant.description}`;
+  image.setAttribute('alt',alt);
   
   li.append(image);
 
