@@ -1,4 +1,4 @@
-const staticCacheName = 'restaurant-v10';
+const staticCacheName = 'restaurant-v01';
 const addToCache = [
     '/',
     '/css/styles.css',
@@ -14,7 +14,8 @@ for (let i = 1; i < 11; i++) {
   addToCache.push(`/img/${i}-200w.jpg`);
   addToCache.push(`/img/${i}-400w.jpg`);
   addToCache.push(`/img/${i}-600w.jpg`);
-  addToCache.push(`/img/${i}-800w.jpg`);  
+  addToCache.push(`/img/${i}-800w.jpg`); 
+  addToCache.push(`/restaurant.html?id=${i}`); 
 }
 
 self.addEventListener('install', function(event){

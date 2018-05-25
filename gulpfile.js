@@ -10,9 +10,9 @@ const responsive = require('gulp-responsive-images');
 gulp.task('default', ['copy-html','copy-img','copy-js','copy-sw','copy-css','copy-json'], function(){
     browserSync.init({
         server: './dist',
-        port: 4000,
+        port: 8000,
         ui: {
-            port: 4001
+            port: 8001
         }
     });
     gulp.watch('app/css/*.css', ['copy-css']);
