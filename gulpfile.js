@@ -7,7 +7,7 @@ const concat = require('gulp-concat');  //spoji vice js do jednoho js
 const uglify = require('gulp-uglify-es').default;  // minifikuje JS
 const responsive = require('gulp-responsive-images');
 
-gulp.task('default', ['copy-html','copy-img','copy-js','copy-css','copy-json'], function(){
+gulp.task('default', ['copy-html','copy-img','copy-js','copy-sw','copy-css','copy-json'], function(){
     browserSync.init({
         server: './dist',
         port: 4000,
@@ -19,13 +19,14 @@ gulp.task('default', ['copy-html','copy-img','copy-js','copy-css','copy-json'], 
     gulp.watch('app/*.html', ['copy-html']);
     gulp.watch('app/data/*.json', ['copy-json']);
     gulp.watch('app/js/**/*.js', ['copy-js']);
+    gulp.watch('app/sw.js', ['copy-sw']);
     gulp.watch('dist/css/*.css', browserSync.reload);              // obe moznosti funguji
     gulp.watch('dist/index.html', browserSync.reload);              // obe moznosti funguji
+    gulp.watch('dist/sw.js', browserSync.reload);              // obe moznosti funguji
     gulp.watch('dist/js/**/*.js').on('change', browserSync.reload); // obe moznosti funguji
-
 });
 
-gulp.task('dist',['copy-html','copy-img','copy-js','copy-json','copy-css']);  //pokud chci spojit vice tasku do jednoho
+gulp.task('dist',['copy-html','copy-img','copy-js','copy-sw','copy-json','copy-css']);  //pokud chci spojit vice tasku do jednoho
 
 // vytvoreni spojeni mezi prohlizecem a kodem, muze byt samostatne nebo  primo v defaultu
 gulp.task('server', ['watch'],function() { // nejprve pusti WATCH
@@ -57,6 +58,11 @@ gulp.task('copy-html', function(){ // zkopiruje html do distu
 gulp.task('copy-js', function(){ // zkopiruje js do distu
     gulp.src('app/js/**/*.js')
         .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('copy-sw', function(){ // zkopiruje js do distu
+    gulp.src('app/sw.js')
+        .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('copy-json', function(){ // zkopiruje js do distu
