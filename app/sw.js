@@ -6,9 +6,16 @@ const addToCache = [
     '/js/main.js',
     '/js/dbhelper.js',
     '/js/restaurant_info.js',
-    '/data/restaurants.json',
-    '/img/1-600w.jpg'
+    '/data/restaurants.json'
   ];
+
+for (let i = 1; i < 11; i++) {
+  addToCache.push(`/img/${i}.jpg`);
+  addToCache.push(`/img/${i}-200w.jpg`);
+  addToCache.push(`/img/${i}-400w.jpg`);
+  addToCache.push(`/img/${i}-600w.jpg`);
+  addToCache.push(`/img/${i}-800w.jpg`);  
+}
 
 self.addEventListener('install', function(event){
   event.waitUntil(
