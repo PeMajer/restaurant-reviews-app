@@ -1,4 +1,7 @@
+// cache name
 const staticCacheName = 'restaurant-v01';
+
+// files to cache
 const addToCache = [
     '/',
     '/css/styles.css',
@@ -9,6 +12,7 @@ const addToCache = [
     '/data/restaurants.json'
   ];
 
+// add all images to cache
 for (let i = 1; i < 11; i++) {
   addToCache.push(`/img/${i}.jpg`);
   addToCache.push(`/img/${i}-200w.jpg`);
@@ -26,6 +30,7 @@ self.addEventListener('install', function(event){
   );
 });
 
+// delete old cache(s)
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -41,6 +46,7 @@ self.addEventListener('activate', function(event) {
   );
 });
 
+//load data from cahce or fetch request
 self.addEventListener('fetch', function (event) {
   event.respondWith(
       caches.match(event.request)
