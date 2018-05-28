@@ -319,12 +319,6 @@ nav h1 a {
   }
  }
 
-@media only screen and (min-width: 324px) {
-  .filter-options {
-    height: 50px;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   html {
     font-size: 14px;   
