@@ -470,25 +470,29 @@ nav h1 a {
   } 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
   html {
     background-color: #fbfbfb;
   } 
   body {
-    width: 1200px;
+    width: 1600px;
     margin: 0 auto;
   }
 
   nav, #map, .filter-options, #restaurants-list, footer, header  {
-    width: 1200px;
+    width: 1600px;
+  }
+
+  #map {
+    height: 500px;
   }
 
   #breadcrumb {  
-    width: 520px;
+    width: 720px;
   }
 
   .inside #map-container {
     left: 50%;
-    width: 600px;
+    width: 800px;
   }
 }
