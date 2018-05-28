@@ -410,6 +410,8 @@ nav h1 a {
   #restaurant-name {
     margin: 15px 0 30px;
     text-align: left;
+    width: 90%;
+
   }
   #restaurant-img {
     width: 90%;
