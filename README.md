@@ -16,7 +16,7 @@ Node.js
 
 1. Clone from GIT repository.
 ```
-https://github.com/PeMajer/restaurant-reviews-app
+git clone https://github.com/PeMajer/restaurant-reviews-app
 ```
 2. Open directory.
 ```
