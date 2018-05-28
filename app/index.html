@@ -26,11 +26,11 @@
       <div class="filter-options" aria-label="filter option">
         <h2>Filter Results</h2>
         <label id="neighborhoods-label" hidden>Select a neighborhoods</label>
-        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-labelledby="neighborhoods-label">
+        <select id="neighborhoods-select" name="neighborhoods" role="listbox" onchange="updateRestaurants()" aria-labelledby="neighborhoods-label">
           <option value="all" id="">All Neighborhoods</option>
         </select>
         <label id="cuisines-label" hidden>Select a cuisines</label>
-        <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-labelledby="cuisines-label">
+        <select id="cuisines-select" name="cuisines" role="listbox" onchange="updateRestaurants()" aria-labelledby="cuisines-label">
           <option value="all">All Cuisines</option>
         </select>
       </div>
