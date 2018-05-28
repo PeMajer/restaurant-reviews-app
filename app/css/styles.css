@@ -137,7 +137,7 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 1rem;  
+  font-size: 0.9rem;  
   height: 35px;
   letter-spacing: 0;
   margin: 9px; 
@@ -345,14 +345,17 @@ nav h1 a {
     text-align: left; 
     width: 40% ;  
   }
+  #restaurants-list li h2 {
+    height: 3rem;
+  }
+  #restaurants-list li p:nth-of-type(2) {
+    height: 3rem;
+  }
 }
 
 @media only screen and (min-width: 758px) {
   html {
-    font-size: 16px;   
-  }
-  nav h1 a {
-    font-size: 14pt;
+    font-size: 15px;   
   }
 
   #breadcrumb {
@@ -368,8 +371,7 @@ nav h1 a {
   .filter-options h2 {
     font-size: 1rem;  
   }
-  .filter-options select {
-    font-size: 11pt;
+  .filter-options select {  
     margin: 10px;
   }
   
@@ -385,15 +387,6 @@ nav h1 a {
   }
   #restaurants-list .restaurant-img {
     min-height: 248px;
-  }
-  #restaurants-list li h2 {
-    font-size: 14pt; 
-  }
-  #restaurants-list p {
-    font-size: 11pt;
-  }
-  #restaurants-list li a {
-    font-size: 10pt;
   }
   
   .inside header {
@@ -415,7 +408,6 @@ nav h1 a {
     width: 50%;
   }
   #restaurant-name {
-    font-size: 20pt;
     margin: 15px 0 30px;
     text-align: left;
   }
@@ -439,7 +431,6 @@ nav h1 a {
   }
   #reviews-container h2 {
     text-align: left;
-    font-size: 24pt;
   }
   #reviews-list li p:nth-of-type(1),
   #reviews-list li p:nth-of-type(2),
@@ -470,9 +461,21 @@ nav h1 a {
   } 
 }
 
+@media only screen and (min-width: 1200px) {
+  html {
+    background-color: #fbfbfb;
+    font-size: 16px;
+  }
+
+  #map {
+    height: 450px;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   html {
     background-color: #fbfbfb;
+    font-size: 17px;
   } 
   body {
     width: 1600px;
